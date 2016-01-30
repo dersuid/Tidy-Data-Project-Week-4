@@ -1,0 +1,36 @@
+#This file is about the new variables created in order to have all the 5 tasks completed
+
+colnames(activity_y_train): column names for activity Y scores train
+
+data_type_train<adds the label for train
+colnames(data_type_train): name the column
+
+data_train<-merge train databases
+
+full_test_train: binding of both files, test and train
+col_names_full_test_train: names for columns
+col_names_full_test_train: substitute " " with "_"
+
+keep_mean_cols: gets the indexes of columns that contains "mean/Mean" within their name
+keep_std_cols<-gets the indexes of columns that contains "std" within their name
+
+colnames(keep_mean_cols): column name for mean index variable
+colnames(keep_std_cols): column name for std index variable
+consecutive:creates a consecutive number for assigning to columns
+
+keep_mean_cols: creates matrix indexes for extracting mean columns
+keep_std_cols<-creates matrix indexes for extracting std columns
+
+only_means: gets only that columns that have the mean information
+only_std: gets only that columns that have the mean information
+
+data_mean_std: binds mean databases and std data bases
+
+activity_labels: gets the activity labels
+colnames(activity_labels): assign column names
+
+data_mean_std$Activity: creates a factor class for activity variable
+
+group_means: grouping of databases considering activity and subject
+
+means_by_group: create a data frame with the means of the grouped data to be exported in step 5
