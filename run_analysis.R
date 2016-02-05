@@ -51,3 +51,36 @@ data_train<-cbind(data_type_train,id_subject_train,scores_X_train,activity_y_tra
 full_test_train<-rbind(data_test,data_train)
 col_names_full_test_train<-colnames(full_test_train)
 col_names_full_test_train<-sub(" ","_",col_names_full_test_train)
+
+
+keep_mean_cols<-as.data.frame(grep("[Mm]ean",col_names_full_test_train, value=FALSE))
+keep_std_cols<-as.data.frame(grep("std",col_names_full_test_train, value=FALSE))
+
+colnames(keep_mean_cols)<-("Col_Mean") 
+colnames(keep_std_cols)<-("Col_Std")
+consecutive<-as.data.frame(1:564)
+
+keep_mean_cols<-as.matrix(keep_mean_cols) 
+keep_std_cols<-as.matrix(keep_std_cols)
+
+only_means<-select(full_test_train, 1,2, keep_mean_cols,564) 
+only_std<-select(full_test_train, keep_std_cols)
+
+data_mean_std<-cbind(only_means,only_std)
+activity_labels<-read.table(".\\UCI HAR Dataset/activity_labels.txt") 
+colnames(activity_labels)<-c("Value","Label")
+
+data_mean_std$Activity<-factor(data_mean_std$Activity, levels = activity_labels$Value, labels=activity_labels$Label)
+
+
+group_means<-group_by(data_mean_std, Activity,ID_Subject)
+
+vars<-colnames(group_means)
+
+means_by_group<-summarise_each(group_means,funs(mean))
+
+write.table(means_by_group,file=".\\UCI HAR Dataset/Tidy Data for Cleaning Data Week 4.txt",row.names=FALSE)
+
+
+
+
