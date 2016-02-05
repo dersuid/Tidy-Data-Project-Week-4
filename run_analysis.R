@@ -52,33 +52,37 @@ full_test_train<-rbind(data_test,data_train)
 col_names_full_test_train<-colnames(full_test_train)
 col_names_full_test_train<-sub(" ","_",col_names_full_test_train)
 
-
+#Identifies those columns that contains the means and standard deviations
 keep_mean_cols<-as.data.frame(grep("[Mm]ean",col_names_full_test_train, value=FALSE))
 keep_std_cols<-as.data.frame(grep("std",col_names_full_test_train, value=FALSE))
 
+#Sets the new anme for both created variables
 colnames(keep_mean_cols)<-("Col_Mean") 
 colnames(keep_std_cols)<-("Col_Std")
 consecutive<-as.data.frame(1:564)
-
 keep_mean_cols<-as.matrix(keep_mean_cols) 
 keep_std_cols<-as.matrix(keep_std_cols)
 
+#Gets only the means and standard deviation indexes for the columns
 only_means<-select(full_test_train, 1,2, keep_mean_cols,564) 
 only_std<-select(full_test_train, keep_std_cols)
-
 data_mean_std<-cbind(only_means,only_std)
 activity_labels<-read.table(".\\UCI HAR Dataset/activity_labels.txt") 
 colnames(activity_labels)<-c("Value","Label")
 
+#Sets the Activity as a factor variable
 data_mean_std$Activity<-factor(data_mean_std$Activity, levels = activity_labels$Value, labels=activity_labels$Label)
 
-
+#Sets the data so we can get the results grouped by activity and subject
 group_means<-group_by(data_mean_std, Activity,ID_Subject)
 
+#Sets the col names for group means variable
 vars<-colnames(group_means)
 
+#Gets the data summarized by subject and activity
 means_by_group<-summarise_each(group_means,funs(mean))
 
+#Exports the data into a txt file and finish this task
 write.table(means_by_group,file=".\\UCI HAR Dataset/Tidy Data for Cleaning Data Week 4.txt",row.names=FALSE)
 
 
