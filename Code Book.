@@ -1,3 +1,98 @@
+
+#This file is about the names and description of the variables contained in the run_analysis.R output
+#Note: in the bottom of this file, it's a complete explanation of the variables created in the R file too.
+
+Activity: Indicates one of the different six activities contained in the databases
+ID_Subject: It is the ID that specifies the subject information
+Data_Type: Indicates if it is a "test" record or a "train" record
+tBodyAcc_mean_X_1: It is the body acceleration mean for x axis
+tBodyAcc_mean_Y_2: It is the body acceleration mean for y axis
+tBodyAcc_mean_Z_3: It is the body acceleration mean for z axis
+tGravityAcc_mean_X_41: It is the gravity acceleration mean for x axis
+tGravityAcc_mean_Y_42: It is the gravity acceleration mean for y axis
+tGravityAcc_mean_Z_43: It is the gravity acceleration mean for z axis
+tBodyAccJerk_mean_X_81: It is the Body Jerk signals means of acceleration for x axis
+tBodyAccJerk_mean_Y_82: It is the Body Jerk signals means of acceleration for y axis
+tBodyAccJerk_mean_Z_83: It is the Body Jerk signals means of acceleration for z axis
+tBodyGyro_mean_X_121: It is the Body gyroscope signals mean for x axis
+tBodyGyro_mean_Y_122: It is the Body gyroscope signals mean for y axis
+tBodyGyro_mean_Z_123: It is the Body gyroscope signals mean for z axis
+tBodyGyroJerk_mean_X_161: It is the Body Jerk signals mean of acceleration for x axis
+tBodyGyroJerk_mean_Y_162: It is the Body Jerk signals mean of acceleration for y axis
+tBodyGyroJerk_mean_Z_163: It is the Body Jerk signals mean of acceleration for z axis
+tBodyAccMag_mean_201: It is the Body acceleration magnitude mean among the three axis
+tGravityAccMag_mean_214: It is the Gravity acceleration magnitude mean among the three axis
+tBodyAccJerkMag_mean_227: It is the Body acceleration Jerk signal magnitude mean among the three axis
+tBodyGyroMag_mean_240: It is the Body Gyroscope signal magnitude mean among the three axis
+tBodyGyroJerkMag_mean_253: It is the Body Gyroscope Jerk magnitude mean among the three axis
+fBodyAcc_mean_X_266: The Fast Fourier Transform for body acceleration mean for x axis
+fBodyAcc_mean_Y_267: The Fast Fourier Transform for body acceleration mean for y axis
+fBodyAcc_mean_Z_268: The Fast Fourier Transform for body acceleration mean for z axis
+fBodyAcc_meanFreq_X_294: The Fast Fourier Transform for body acceleration mean and frequency for x axis
+fBodyAcc_meanFreq_Y_295: The Fast Fourier Transform for body acceleration mean and frequency for y axis
+fBodyAcc_meanFreq_Z_296: The Fast Fourier Transform for body acceleration mean and frequency for z axis
+fBodyAccJerk_mean_X_345: The Fast Fourier Transform for body acceleration Jerk mean for x axis
+fBodyAccJerk_mean_Y_346: The Fast Fourier Transform for body acceleration Jerk mean for y axis
+fBodyAccJerk_mean_Z_347: The Fast Fourier Transform for body acceleration Jerk mean for z axis
+fBodyAccJerk_meanFreq_X_373: The Fast Fourier Transform for body acceleration Jerk mean and frequency for x axis
+fBodyAccJerk_meanFreq_Y_374: The Fast Fourier Transform for body acceleration Jerk mean and frequency for y axis
+fBodyAccJerk_meanFreq_Z_375: The Fast Fourier Transform for body acceleration Jerk mean and frequency for z axis
+fBodyGyro_mean_X_424: The Fast Fourier Transform for body Gyroscope mean for x axis
+fBodyGyro_mean_Y_425: The Fast Fourier Transform for body Gyroscope mean for y axis
+fBodyGyro_mean_Z_426: The Fast Fourier Transform for body Gyroscope mean for z axis
+fBodyGyro_meanFreq_X_452: The Fast Fourier Transform for body Gyroscope mean and frequency for x axis
+fBodyGyro_meanFreq_Y_453: The Fast Fourier Transform for body Gyroscope mean and frequency for y axis
+fBodyGyro_meanFreq_Z_454: The Fast Fourier Transform for body Gyroscope mean and frequency for z axis
+fBodyAccMag_mean_503: The Fast Fourier Transform for body acceleration magnitude mean
+fBodyAccMag_meanFreq_513: The Fast Fourier Transform for body acceleration magnitude mean and frequency
+fBodyBodyAccJerkMag_mean_516: The Fast Fourier Transform for body acceleration Jerk magnitude mean
+fBodyBodyAccJerkMag_meanFreq_526: The Fast Fourier Transform for body acceleration Jerk magnitude mean and frequency
+fBodyBodyGyroMag_mean_529: The Fast Fourier Transform for body Gyroscope magnitude mean
+fBodyBodyGyroMag_meanFreq_539: The Fast Fourier Transform for body Gyroscope magnitude mean and frequency
+fBodyBodyGyroJerkMag_mean_542: The Fast Fourier Transform for body Gyroscope Jerk magnitude mean
+fBodyBodyGyroJerkMag_meanFreq_552: The Fast Fourier Transform for body Gyroscope Jerk magnitude mean and frequency
+angletBodyAccMean,gravity_555: It is the angular velocity of body acceleration of mean gravity
+angletBodyAccJerkMean,gravityMean)_556: It is the angular velocity of body acceleration Jerk of mean gravity
+angletBodyGyroMean,gravityMean_557: It is the angular velocity of body gyroscope mean of gravity
+angletBodyGyroJerkMean,gravityMean_558: It is the angular velocity of body gyroscope Jerk mean of gravity
+angleX,gravityMean_559: It is the angular velocity mean of gravity for x axis
+angleY,gravityMean_560: It is the angular velocity mean of gravity for y axis
+angleZ,gravityMean_561: It is the angular velocity mean of gravity for z axis
+tBodyAcc_std_X_4: It is the body acceleration standar deviation for x axis
+tBodyAcc_std_Y_5: It is the body acceleration standar deviation for y axis
+tBodyAcc_std_Z_6: It is the body acceleration standar deviation for z axis
+tGravityAcc_std_X_44: It is the gravity acceleration standar deviation for x axis
+tGravityAcc_std_Y_45: It is the gravity acceleration standar deviation for y axis
+tGravityAcc_std_Z_46: It is the gravity acceleration standar deviation for z axis
+tBodyAccJerk_std_X_84: It is the Body Jerk signals standar deviations of acceleration for x axis
+tBodyAccJerk_std_Y_85: It is the Body Jerk signals standar deviations of acceleration for y axis
+tBodyAccJerk_std_Z_86: It is the Body Jerk signals standar deviations of acceleration for z axis
+tBodyGyro_std_X_124: It is the Body gyroscope signals standar deviation for x axis
+tBodyGyro_std_Y_125: It is the Body gyroscope signals standar deviation for y axis
+tBodyGyro_std_Z_126: It is the Body gyroscope signals standar deviation for z axis
+tBodyGyroJerk_std_X_164: It is the Body Jerk signals standar deviation of acceleration for x axis
+tBodyGyroJerk_std_Y_165: It is the Body Jerk signals standar deviation of acceleration for y axis
+tBodyGyroJerk_std_Z_166: It is the Body Jerk signals standar deviation of acceleration for z axis
+tBodyAccMag_std_202: It is the body acceleration magnitude estándar deviation
+tGravityAccMag_std_215: It is the gravity acceleration magnitude estándar deviation
+tBodyAccJerkMag_std_228: It is the body acceleration jerk magnitude estándar deviation
+tBodyGyroMag_std_241: It is the body Gyroscope magnitude estándar deviation
+tBodyGyroJerkMag_std_254: It is the body Gyroscope Jerk magnitude estándar deviation
+fBodyAcc_std_X_269: The Fast Fourier Transform for body acceleration standar deviation for x axis
+fBodyAcc_std_Y_270: The Fast Fourier Transform for body acceleration standar deviation for y axis
+fBodyAcc_std_Z_271: The Fast Fourier Transform for body acceleration standar deviation for z axis
+fBodyAccJerk_std_X_348: The Fast Fourier Transform for body acceleration Jerk standar deviation for x axis
+fBodyAccJerk_std_Y_349: The Fast Fourier Transform for body acceleration Jerk standar deviation for y axis
+fBodyAccJerk_std_Z_350: The Fast Fourier Transform for body acceleration Jerk standar deviation for z axis
+fBodyGyro_std_X_427: The Fast Fourier Transform for body Gyroscope standar deviation for x axis
+fBodyGyro_std_Y_428: The Fast Fourier Transform for body Gyroscope standar deviation for y axis
+fBodyGyro_std_Z_429: The Fast Fourier Transform for body Gyroscope standar deviation for z axis
+fBodyAccMag_std_504: The Fast Fourier Transform for body acceleration magnitude standar deviation
+fBodyBodyAccJerkMag_std_517: The Fast Fourier Transform for body acceleration Jerk magnitude standar deviation
+fBodyBodyGyroMag_std_530: The Fast Fourier Transform for body Gyroscope magnitude standar deviation
+fBodyBodyGyroJerkMag_std_543: The Fast Fourier Transform for body Gyroscope Jerk magnitude standar deviation
+
+
 #This file is about the new variables created in order to have all the 5 tasks completed
 
 colnames(activity_y_train): column names for activity Y scores train
